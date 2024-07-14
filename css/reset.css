@@ -1,0 +1,56 @@
+/* #region Base styles */
+body {
+  font-family: var(--font-family);
+  color: var(--slate);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+address {
+  font-style: normal;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  color: currentColor;
+}
+
+input {
+  font-family: inherit;
+}
+
+/* #endregion */

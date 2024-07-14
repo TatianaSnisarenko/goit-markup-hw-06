@@ -1,0 +1,42 @@
+:root {
+  /* Colors */
+  --iris: #4d5ae5;
+  --ocean: #404bbf;
+  --navy-blue: #2e2f42;
+  --green: #31d0aa;
+  --slate: #434455;
+  --light-slate: #8e8f99;
+  --cornflower: #e7e9fc;
+  --cloud: #f4f4fd;
+  --navy-blue-modal: rgba(46, 47, 66, 0.4);
+  --grey: rgba(46, 47, 66, 0.7);
+  --white: #fff;
+  --dairy: #fcfcfc;
+
+  /* Fonts */
+  --font-family: 'Roboto', sans-serif;
+  --second-family: 'Raleway', sans-serif;
+
+  /* Shadow */
+  --card-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+  --btn-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+
+  /* Transitions */
+  --transition-primary: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-modal: 700ms ease-in-out;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
