@@ -1,0 +1,102 @@
+.container {
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section:not(:first-child) {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+@media screen and (min-width: 1158px) {
+  .section:not(:first-child) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+.portfolio-subtitle,
+.team-card-title {
+  color: var(--navy-blue);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
+.portfolio-title,
+.team-title {
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--navy-blue);
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
+.advantates-list,
+.portfolio-list,
+.team-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.advantates-list,
+.team-list {
+  row-gap: 72px;
+}
+
+.team-icon-item,
+.socials-icon-item {
+  height: 40px;
+  width: 40px;
+}
+
+.team-icon,
+.socials-icon {
+  fill: var(--cloud);
+}
+
+.team-icon-button,
+.socials-icon-button {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--iris);
+  border: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color var(--transition-primary);
+}
+
+.socials-icon-list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.socials-icon-button:hover,
+.socials-icon-button:focus {
+  background-color: var(--green);
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  border: 0;
+}

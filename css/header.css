@@ -1,0 +1,253 @@
+/* #region Mobile */
+
+.header {
+  border-bottom: 1px solid var(--cornflower);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  max-width: 1158px;
+  width: 100%;
+  position: relative;
+  justify-content: space-between;
+}
+
+.menu {
+  display: none;
+  background-color: var(--white);
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  max-width: 320px;
+  width: 100%;
+  transition: var(--transition-primary);
+  transition-property: display, opacity;
+  position: absolute;
+  top: 16px;
+  right: 0;
+  opacity: 0;
+}
+
+.menu.is-open {
+  opacity: 1;
+  display: flex;
+}
+
+.menu-close-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  min-width: 24px;
+  max-height: 24px;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  transition: var(--transition-primary);
+  transition-property: background-color, border;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: var(--cloud);
+}
+
+.menu-close-btn:hover,
+.menu-btn:focus {
+  background-color: var(--ocean);
+  border: none;
+}
+
+.menu-close-btn:focus .menu-close-btn-icon,
+.menu-close-btn:hover .menu-close-btn-icon {
+  fill: var(--white);
+}
+
+.header-menu-btn-icon {
+  fill: #2f2f37;
+}
+
+.header-menu-btn {
+  min-width: 24px;
+  min-height: 24px;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  margin: 16px;
+  background-color: transparent;
+  transition: display var(--transition-primary);
+}
+
+.header-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 16px;
+}
+
+.nav {
+  margin-top: 72px;
+  margin-bottom: 168px;
+}
+
+.nav-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+  color: var(--navy-blue);
+  display: inline-block;
+  transition: color var(--transition-primary);
+  position: relative;
+}
+
+.selected {
+  color: var(--ocean);
+}
+
+.address {
+  margin-left: 16px;
+}
+
+.address-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.address-link {
+  color: var(--slate);
+  transition: color var(--transition-primary);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+}
+.address-email {
+  color: var(--iris);
+}
+
+.menu .socials {
+  margin: 16px;
+  margin-top: 48px;
+}
+
+.menu .socials-icon-list {
+  gap: 40px;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.address-link:hover,
+.address-link:focus {
+  color: var(--ocean);
+}
+
+/* #endregion */
+
+@media screen and (min-width: 768px) {
+  .header .container {
+    justify-content: start;
+  }
+
+  .menu {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    width: 100%;
+    position: static;
+  }
+
+  .menu .socials {
+    display: none;
+  }
+
+  .menu-close-btn {
+    display: none;
+  }
+
+  .header-menu-btn-icon {
+    display: none;
+  }
+
+  .header-menu-btn {
+    display: none;
+  }
+
+  .header-nav {
+    flex-direction: row;
+  }
+
+  .nav-list {
+    flex-direction: row;
+    margin: 0;
+  }
+  .nav {
+    margin: 0;
+  }
+
+  .nav-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    padding: 24px 0;
+  }
+
+  .selected::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: var(--ocean);
+    border-radius: 2px;
+  }
+
+  .address-list {
+    gap: 12px;
+    margin: 16px;
+  }
+
+  .address-link {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+  }
+
+  .address-email {
+    color: var(--slate);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .address-list {
+    flex-direction: row;
+    gap: 40px;
+    margin: 24px;
+  }
+
+  .address-link {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+  }
+
+  .address-email {
+    color: var(--slate);
+  }
+}
