@@ -20,19 +20,14 @@
   background-color: var(--white);
   flex-direction: column;
   align-items: start;
-  justify-content: space-between;
-  max-width: 320px;
-  width: 100%;
+  max-width: 100%;
   transition: var(--transition-primary);
-  transition-property: display, opacity;
-  position: absolute;
-  top: 16px;
-  right: 0;
-  opacity: 0;
+  transition-property: display;
+  position: fixed;
+  inset: 0;
 }
 
 .menu.is-open {
-  opacity: 1;
   display: flex;
 }
 
@@ -95,7 +90,7 @@
 
 .nav {
   margin-top: 72px;
-  margin-bottom: 168px;
+  margin-bottom: auto;
 }
 
 .nav-link {
@@ -167,6 +162,7 @@
     max-width: 100%;
     width: 100%;
     position: static;
+    height: auto;
   }
 
   .menu .socials {
