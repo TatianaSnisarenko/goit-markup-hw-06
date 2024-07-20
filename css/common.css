@@ -1,7 +1,7 @@
 .container {
-  max-width: 1158px;
+  max-width: 320px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 16px;
 }
 
 .section:not(:first-child) {
@@ -9,10 +9,21 @@
   padding-bottom: 96px;
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
 @media screen and (min-width: 1158px) {
   .section:not(:first-child) {
     padding-top: 120px;
     padding-bottom: 120px;
+  }
+
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
   }
 }
 
